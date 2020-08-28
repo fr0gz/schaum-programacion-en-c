@@ -12,7 +12,7 @@ int main()
 {
 	int n, i = 0;
 	int a[100], b[100], min[100];
-	int menor(int, int);
+	int menor(int a, int b);
 
 	printf("Para PARAR, introducir 0 en cada numero\n");
 
@@ -26,8 +26,15 @@ int main()
 		min[i] = menor(a[i], b[i]);
 
 		printf("\nIntroduzca el primer numero: ");
-		scanf("%d", &a[i]);
+		scanf("%d", &a[++i]);
 		printf("Introduzca el segundo numero: ");
 		scanf("%d", &b[i]);
+	}
+	
+	n = --i;
+	
+	printf("\n\nRelacion de resultados\n\n");
+	for(i = 0; i <= n ; ++i){ 
+		printf("a = %d b = %d min = %d\n", a[i], b[i], min[i]);
 	}
 }
