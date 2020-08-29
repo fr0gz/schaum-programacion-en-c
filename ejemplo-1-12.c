@@ -13,13 +13,13 @@ float procesar(float r)
 
 int main()
 {
-	int n, i = 0;
+	int n, i = 0; /*declaracion de variable */
 	float radio[100], area[100];
 	float procesar(float radio);
 
 	printf("Para PARAR introducir 0 en el Radio\n\n");
 	printf("Radio = ?");
-	scanf("%f", &radio[i]);
+	scanf("%f", &radio[i]);/* declaracion de entrada de un float */
 
 	while(radio[i]) {
 
